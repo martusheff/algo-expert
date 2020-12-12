@@ -6,12 +6,11 @@ targetSum = 10
 # Simple Solution (nested for loops)
 # T: O(n^2) S: O(1)
 def twoNumberSumV1(array, targetSum):
-	arr = []
 	for x in array: 						# Iterates through array
 		for y in array:						# Iterates through array for every value in array
 			if (array.index(x) != array.index(y)) and x + y == targetSum: 	# Checks if vals add up to targetSum
-	  			arr = [x,y]
-	return arr
+	  			return [x,y]
+	return []
 
 
 
@@ -54,9 +53,7 @@ print("Solution Three:	" + str(twoNumberSumV3(array, targetSum)))
 
 
 """ Description:
-	
-	In twoNumberSum, we are trying to find two values in a given array that add up to
-	a given targetSum.
-						"""
+In twoNumberSum, we are trying to find two values in a given array that add up to
+a given targetSum. """
 
 
